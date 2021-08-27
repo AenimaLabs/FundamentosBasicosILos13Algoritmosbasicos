@@ -106,14 +106,44 @@
 
         console.log("Usando for: ",Cuadrados1(array1));
         console.log("Usando foreach: ",Cuadrados2(array1));
-       
+
+        //Negativos
+
+        function Negativos(x){
+            neg = [];
+            for (i=0; i<x.length; i++){
+                if (x[i]<0 ){
+                    neg[i]=0;
+                }
+                else{
+                    neg[i]=x[i];
+                }
+            }return neg;
+        
+        }
+        array1 =[2,-4,5];
+
+        console.log("Sin negativos Usando for: ",Negativos(array1));
 
 
+        //Max, Min, Avg
 
+        function Maxminavg (x) {
+            mma=[];
+            
+            mma[0]=Math.max.apply(null, x);
+            mma[1]=Math.min.apply(null, x);
+            mma[2]=(x.reduce((previus, current) => current+=previus)/x.length);
+            return mma;
 
+        }
 
+        array1 =[2,-4,5];
 
+        console.log("Sin negativos Usando for: ",Maxminavg(array1));
 
+        //Intercambia valores
 
+        //Número a String
     /* 5 
 */
