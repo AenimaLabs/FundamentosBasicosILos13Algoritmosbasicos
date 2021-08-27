@@ -144,6 +144,37 @@
 
         //Intercambia valores
 
+        function Cambiaditas(x){
+                   camb=[];     
+            for (i=0; i<x.length;i++){
+                camb[i]=x[i];
+                 
+            }
+            
+            camb[0]=x[x.length-1];
+            camb[camb.length-1]=x[0];
+            
+            return camb;    
+
+        }
+        array1 =[15,2,-4,5,7,15,20];
+        console.log("Cambiaditas: ",Cambiaditas(array1));
+
         //Número a String
-    /* 5 
-*/
+
+        function NumtoString(x){
+            neg = [];
+            for (i=0; i<x.length; i++){
+                if (x[i]<0 ){
+                    neg[i]="dojo";
+                }
+                else{
+                    neg[i]=x[i];
+                }
+            }return neg;
+        
+        }
+        array1 =[2,-4,5,-50];
+
+        console.log("Sin negativos Usando for: ",NumtoString(array1));
+  
