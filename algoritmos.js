@@ -23,7 +23,7 @@
     }*/
 
 
-    /*sumatoria impares
+    // sumatoria impares
     function sumaimpares (x){        
         b=0;
     for (var i=0; i<=x; i++) {
@@ -32,13 +32,23 @@
             
         }
     } return b}
-    console.log(sumaimpares(5000));*/
+    console.log("La suma total de impares es: ",sumaimpares(5000));
 
-    /* 4 itera un array
+    //4 itera un array
+
+    iteraarray=[7,-3,6,-1];
+    contador=0;
+    iteraarray.forEach(element => contador +=element);
+    console.log("La suma de todos los elementos del array es: ",contador);
+
+    //5 número máximo
+
+ 
 
 
 
-*/
+
+
 
     /* 5 
 */
